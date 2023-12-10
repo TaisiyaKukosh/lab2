@@ -6,6 +6,7 @@ void create(toursforJanuary ** arr, int * n){
 	scanf("%d", n);
 	if (*n <= 0)
 		return;
+	if (n !)
 	*arr = (toursforJanuary *)calloc(*n, sizeof(toursforJanuary));
 	for (int i = 0; i < * n; i++){
 		printf("Название - ");
@@ -47,4 +48,8 @@ void write(toursforJanuary * arr, int n){
 	for(int i = 0; i < n; i++)
 		fprintf(fl, "%s %i %i %i", arr[i].name, arr[i].date, arr[i].people, arr[i].price);
 fclose(fl);
+}
+void printt(toursforJanuary * arr, int n){
+	for(int i = 0; i < n; i++)
+		printf("Назвние тура: %s\n Дата проведения тура: %i\n Количество человек: %i \n Стоимость для одного человека: %i \n", arr[i].name, arr[i].date, arr[i].people, arr[i].price);
 }
