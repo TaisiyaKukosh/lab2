@@ -6,7 +6,6 @@ void create(toursforJanuary ** arr, int * n){
 	scanf("%d", n);
 	if (*n <= 0)
 		return;
-	if (n !)
 	*arr = (toursforJanuary *)calloc(*n, sizeof(toursforJanuary));
 	for (int i = 0; i < * n; i++){
 		printf("Название - ");
