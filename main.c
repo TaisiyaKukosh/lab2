@@ -17,6 +17,7 @@ int main(){
 				else
 					printf("Созданно %d элементов \n", n);
 				write(arr, n);
+				break;
 			}
 			case 2:{
 				read(&arr, &n);
@@ -24,11 +25,15 @@ int main(){
 					printf("Ошибка чтения \n");
 				else
 					printf("Загруженно %d элементов \n", n);
+				break;
 			}
 			case 3:{
-				for(int i = 0; i < n; i++)
-					printf("Назвние тура: %s\n Дата проведения тура: %i\n Количество человек: %i \n Стоимость для одного человека: %i \n", arr[i].name, arr[i].date, arr[i].people, arr[i].price);
-				break;
+				printt(arr, n);
+				if(!arr)
+					printf("Ошибка чтения \n");
+				else
+					printf("Запланировано туров: %d   \n", n);
+				break;	
 			}
 			case 4:	{
 				search(arr, n);
